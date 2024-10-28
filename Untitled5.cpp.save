@@ -51,6 +51,9 @@ void MoveHuman()
 
         DrawGrass1(155, 470);
 
+        DrawSun(xSun, 95, 0, 0, 0, 0, 0, 0);
+        xSun = Xsun + 10;
+
         DrawCloud(50, 40, 0, 0);
 
         DrawGrass2(1015, 590);
@@ -59,9 +62,9 @@ void MoveHuman()
 
         DrawHuman (xHuman, 485, 0.5, 1, 50, 50, 10, 10, 1, 1, 1, 1, 1, 1, 1, 1);
         xHuman = xHuman + 10;
-
+        
         DrawSun(xSun, 95, 0, 0, 0, 0, 0, 0);
-        xSun = xSun + 10;
+        xSun = Xsun + 10;
 
         txSleep (50);
 
